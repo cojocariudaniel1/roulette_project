@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="tickets_results_wizard_form" model="ir.ui.view">
+            <field name="name">Tickets results wizard form</field>
+            <field name="model">result_wizard</field>
+            <field name="arch" type="xml">
+                <form string="Results">
+                    <group>
+                        <field name="tickets_ids" />
+                    </group>
+                    <footer>
+                        <button name="result_wizard" type="object" string="Roulette results" class="oe_highlight" />
+                        <button special="cancel" string="Cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+    <act_window
+        id="tickets_results"
+        name="Tickets results"
+        binding_model="test13_ticket"
+        res_model="result_wizard"
+        view_mode="form"
+        target="new"
+    />
+</odoo>

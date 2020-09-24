@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_test13_client,access_test13_client,model_test13_client,base.group_user,1,1,1,1
+access_test13_ticket,access_test13_ticket,model_test13_ticket,base.group_user,1,1,1,1
