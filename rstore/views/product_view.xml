@@ -1,0 +1,32 @@
+<odoo>
+
+    <menuitem id="menu_product_app" name="Store"/>
+
+    <record id="action_list_products" model="ir.actions.act_window">
+        <field name="name">Store products</field>
+        <field name="res_model">rproduct</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_productss" parent="menu_product_app" name="Products" sequence="10"
+              action="action_list_products"/>
+
+    <record id="view_product_tree" model="ir.ui.view" >
+        <field name="name">Product tree</field>
+        <field name="model">rproduct</field>
+        <field name="arch" type="xml">
+            <tree>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_product_form" model="ir.ui.view">
+        <field name="name">Product form</field>
+        <field name="model">rproduct</field>
+        <field name="arch" type="xml">
+            <form>
+            </form>
+        </field>
+    </record>
+
+</odoo>
