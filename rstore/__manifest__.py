@@ -7,10 +7,7 @@
     "summary": "RStore",
     "category": "",
     "license": "LGPL-3",
-    "data": [
-        "views/product_view.xml",
-        "security/ir.model.access.csv",
-    ],
+    "data": ["views/product_view.xml", "security/ir.model.access.csv"],
     "images": ["static/icon.png"],
     "development_status": "stable",
     "maintainers": ["CDaniel"],
